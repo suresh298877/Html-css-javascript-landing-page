@@ -1,0 +1,65 @@
+.wrapper {
+    height: 100vh;
+    perspective: 10px;
+    /* min-width: 100vw; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: rgba(26, 19, 96, 0);
+    z-index: 2;
+    width: 100vw;
+
+}
+
+li a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.header {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    z-index: -1;
+    transform: translateZ(-10px) scale(2);
+}
+
+
+.foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+
+
+.wave-violet {
+    position: absolute;
+    bottom: 0px;
+    height: 250px;
+    width: 100%;
+}
+
+.wave-white {
+    position: absolute;
+    bottom: 0px;
+    height: 250px;
+    width: 100%;
+}
